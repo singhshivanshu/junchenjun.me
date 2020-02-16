@@ -5,9 +5,6 @@
  */
 
 module.exports = {
-  /* Your site config here */
-    plugins: [
-    `gatsby-alias-imports`,
-    `gatsby-plugin-eslint`
-  ]
+    /* Your site config here */
+    plugins: [`gatsby-alias-imports`, `gatsby-plugin-eslint`],
 }
