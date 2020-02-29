@@ -5,7 +5,7 @@ import Board from './components/Board/index'
 import Footer from './components/Footer/index'
 
 const App = () => {
-    const [state, setState] = useState('About')
+    const [state, setState] = useState('')
 
     return (
         <div className="container">
