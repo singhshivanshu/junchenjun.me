@@ -1,5 +1,9 @@
 const Router = [
     {
+        name: 'About',
+        color: ''
+    },
+    {
         name: 'Skills',
         color: ''
     },
@@ -10,7 +14,7 @@ const Router = [
     {
         name: 'Education',
         color: ''
-    },
+    }
 ]
 
 export default Router;

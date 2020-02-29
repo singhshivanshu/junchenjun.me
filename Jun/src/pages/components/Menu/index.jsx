@@ -1,13 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { Router } from '../../constants'
+import "./style.scss"
 
-const Menu = () => {
-    return Router.map((item) => 
-        <Link key={item.name} to={item.name} activeStyle={{ color: 'red' }} partiallyActive>
-            {item.name}
-        </Link>
-      )
-}
+const Menu = () => (
+    <nav>
+        { Router.map((item) => 
+            <div key={item.name} className="section">
+                <div className="section-title">
+                    <h1>
+                       {item.name}
+                    </h1>
+                </div>
+            </div>
+            )}
+    </nav>
+)
 
 export default Menu;
