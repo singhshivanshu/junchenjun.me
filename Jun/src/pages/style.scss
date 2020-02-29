@@ -1,14 +1,16 @@
 * {
     margin: 0;
     box-sizing: border-box;
+
     body,
     html {
+        font-size: 16px;
         background-color: #dddddd;
     }
 }
 .container {
     margin: 0vh auto;
-    padding: 3vh 0;
+    padding: 5vh 0;
     max-width: 650px;
     height: 100vh;
 

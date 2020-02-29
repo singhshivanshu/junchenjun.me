@@ -9,6 +9,21 @@
         margin: 2rem 2rem;
         padding: 1rem;
         font-size: 1.6rem;
-        color: #f1f3f4;
+        color: #bdcdee;
+
+        h1 {
+            font-size: larger;
+            color: #dee6f6;
+        }
+    }
+
+    .welcome-svg {
+        position: absolute;
+        fill: #204081;
+        width: 18rem;
+        margin: 0 auto;
+        bottom: 1rem;
+        left: auto;
+        right: auto;
     }
 }
