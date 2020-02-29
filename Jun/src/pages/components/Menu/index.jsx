@@ -1,19 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Router } from '../../constants'
-import "./style.scss"
+import './style.scss'
 
-const Menu = () => (
-    <nav>
-        { Router.map((item) => 
-            <div key={item.name} className="section">
-                <div className="section-title">
-                    <h1>
-                       {item.name}
+const Menu = props => {
+    let initialHightlightState
+
+    useEffect(() => {
+        Object.keys(Router).map(item => {
+            initialHightlightState = { ...initialHightlightState, [item]: '' }
+        })
+    }, [])
+
+    const [highlight, setHighlight] = useState([initialHightlightState])
+
+    const { setPage } = props
+
+    return (
+        <nav className="menu">
+            {Object.keys(Router).map(item => (
+                <div key={item}>
+                    <h1
+                        onClick={() => {
+                            setHighlight({
+                                ...initialHightlightState,
+                                [item]: 'highlight',
+                            })
+                            return setPage(item)
+                        }}
+                        className={highlight[item]}
+                    >
+                        {item}
                     </h1>
                 </div>
-            </div>
-            )}
-    </nav>
-)
+            ))}
+        </nav>
+    )
+}
 
-export default Menu;
+export default Menu

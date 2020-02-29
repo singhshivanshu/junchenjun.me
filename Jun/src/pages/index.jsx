@@ -1,14 +1,21 @@
-import React from 'react'
-import Menu from "./components/Menu";
-import Title from './components/Tittle';
+import React, { useState } from 'react'
+import Menu from './components/Menu'
+import './style.scss'
+import Board from './components/Board/index'
+import Footer from './components/Footer/index'
 
-const App = () => (
-    <div>
-        <Title/>
-        <Menu/>
-    </div>
-)
+const App = () => {
+    const [state, setState] = useState('About')
 
+    return (
+        <div className="container">
+            <main className="content">
+                <Menu setPage={setState} page={state} />
+                <Board page={state} />
+            </main>
+            <Footer />
+        </div>
+    )
+}
 
-
-export default App;
+export default App

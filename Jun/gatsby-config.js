@@ -6,5 +6,16 @@
 
 module.exports = {
     /* Your site config here */
-    plugins: [`gatsby-alias-imports`, `gatsby-plugin-eslint`,`gatsby-plugin-sass`],
+    plugins: [
+        `gatsby-alias-imports`, 
+        `gatsby-plugin-eslint`,
+        `gatsby-plugin-sass`, 
+        {
+        resolve: 'gatsby-plugin-web-font-loader',
+        options: {
+            google: {
+            families: ['Covered By Your Grace']
+            }
+        }}
+    ],
 }

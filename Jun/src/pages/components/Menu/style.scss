@@ -1,81 +1,22 @@
-$nav-max-width: 500px;
-$border-radius: 15px;
-
-$section-height: 140px;
-$section-title-height:+($section-height/4*3);
-
-$section-move-up: $section-height/2;
-$last-section-height:+($section-height/4*3);
-$nav-height: +($section-height - $section-move-up)*3+90px;
-
-$section-title-bg-color-1: #5f6769;
-$section-title-bg-color-2: darken($section-title-bg-color-1, 8%);
-$section-title-bg-color-3: darken($section-title-bg-color-2, 7%);
-$section-title-bg-color-4: darken($section-title-bg-color-3, 6%);
-$title-text-color: lighten($section-title-bg-color-4, 50%);
-
-$section-box-shadow-1: darken($section-title-bg-color-1, 6%);
-$section-box-shadow-2: darken($section-title-bg-color-2, 4%);
-$section-box-shadow-3: darken($section-title-bg-color-3, 3%);
-$section-box-shadow-4: darken($section-title-bg-color-4, 2%);
-
-* {
-  box-sizing: border-box;
-}
-
-nav {
-  background-color:rosybrown;
-  max-width: $nav-max-width;
-  margin: 0 auto;
-  border-radius: $border-radius;
-  height: $nav-height;
-  box-sizing: border-box;
-  
-  .section {
-    height: $section-height;
-    overflow: hidden;
-    border-radius: $border-radius;
+.menu {
+  width: 200px;
+  text-align: right;
+  height: 300px;
+  // background-color: #71a95a;
+  div {
     position: relative;
-    bottom: $section-move-up;
-
-    .section-title{
-      h1 {
-        height: $section-title-height;
-        margin: 0;
-        display:flex;
-        align-items: center;
-        color: $title-text-color;
-      }
+    left: 1rem;
+    
+    h1{
+      margin: 7px 0;
+      font-size: 3rem;
+      color: #fd5e53;
+      font-family: 'Covered By Your Grace';
+      display: inline-block;
     }
-  }
 
-  .section:nth-of-type(1){
-    background-color: $section-title-bg-color-1;
-    // box-shadow: 0 -8px 6px -6px $section-box-shadow-1;
-    // border-top: $section-box-shadow-1 1px solid;;
-    bottom: 0;
-    z-index: 1;
-  }
-  .section:nth-of-type(2){
-    background-color:$section-title-bg-color-2;
-    // box-shadow: 0 -8px 6px -6px $section-box-shadow-2;
-    // border-top: $section-box-shadow-2 1px solid;;
-    bottom: 60px;
-    z-index: 2;
-  }
-  .section:nth-of-type(3){
-    background-color:$section-title-bg-color-3;
-    // box-shadow: 0 -8px 6px -6px $section-box-shadow-3;
-    // border-top: $section-box-shadow-3 1px solid;;
-    bottom: 120px;
-    z-index: 3;
-  }
-  .section:nth-of-type(4){
-    background-color:$section-title-bg-color-4;
-    // box-shadow: 0 -8px 6px -6px $section-box-shadow-4;
-    // border-top: $section-box-shadow-4 1px solid;;
-    bottom: 180px;
-    z-index: 4;
-    height: $last-section-height;
+    h1.highlight{
+      color: blue;
+    }
   }
 }

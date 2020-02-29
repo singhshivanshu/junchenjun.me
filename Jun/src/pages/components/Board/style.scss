@@ -1,0 +1,14 @@
+.board {
+    background-color: #142850;
+    height: 100%;
+    display: block;
+    width: 100%;
+    overflow: scroll;
+
+    .board-content {
+        margin: 2rem 2rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: #f1f3f4;
+    }
+}

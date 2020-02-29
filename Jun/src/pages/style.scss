@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    body,
+    html {
+        background-color: #dddddd;
+    }
+}
+.container {
+    margin: 0vh auto;
+    padding: 3vh 0;
+    max-width: 650px;
+    height: 100vh;
+
+    .content {
+        // background-color: #fd5e53;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        height: 90vh;
+    }
+}
