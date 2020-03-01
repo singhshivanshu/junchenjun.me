@@ -92,13 +92,15 @@
     }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 500px) {
     .board {
+        width: 90vw;
+        margin: 0 auto;
+
         .board-content {
             margin: 1rem 1rem;
             font-size: 1.1rem;
             padding: 0.2rem;
-            margin-top: 2rem;
         }
     }
 }
