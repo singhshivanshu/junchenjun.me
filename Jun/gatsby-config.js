@@ -17,6 +17,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-eslint`,
+        `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
         {
             resolve: 'gatsby-plugin-react-svg',
