@@ -1,0 +1,65 @@
+@import './colors.scss';
+
+.menu {
+    width: 200px;
+    text-align: right;
+    height: 300px;
+
+    div {
+        position: relative;
+        left: 1rem;
+
+        h1 {
+            margin: 7px 0;
+            font-size: 3rem;
+            color: $menu-color;
+            font-family: 'Covered By Your Grace';
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        h1.highlight {
+            color: $highlight-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 1.8rem;
+        margin-top: 0;
+
+        div {
+            position: relative;
+            left: 0;
+            top: 0.2rem;
+            h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 374px) and (max-width: 560px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 3rem;
+
+        div {
+            position: relative;
+            left: 0;
+            top: 0.2rem;
+            h1 {
+                margin: 7px 0;
+            }
+        }
+    }
+}

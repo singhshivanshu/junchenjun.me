@@ -11,9 +11,11 @@
         "start": "npm run develop",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
-        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "dependencies": {
+        "@icons-pack/react-simple-icons": "^2.3.0",
         "gatsby": "^2.19.7",
         "gatsby-alias-imports": "^1.0.4",
         "gatsby-plugin-react-svg": "^3.0.0",
@@ -30,6 +32,7 @@
         "eslint-plugin-import": "^2.20.0",
         "eslint-plugin-react": "^7.18.0",
         "gatsby-plugin-eslint": "^2.0.8",
+        "gh-pages": "^2.2.0",
         "prettier": "^1.19.1"
     }
 }

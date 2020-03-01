@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import Menu from './components/Menu'
-import './style.scss'
+import './styles/index.scss'
 import Board from './components/Board/index'
-import Footer from './components/Footer/index'
 
 const App = () => {
-    const [state, setState] = useState('')
+    const [state, setState] = useState('About')
 
     return (
         <div className="container">
@@ -13,7 +12,6 @@ const App = () => {
                 <Menu setPage={setState} page={state} />
                 <Board page={state} />
             </main>
-            <Footer />
         </div>
     )
 }

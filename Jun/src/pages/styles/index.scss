@@ -1,0 +1,43 @@
+@import './menu.scss';
+@import './board.scss';
+@import './footer.scss';
+@import './colors.scss';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    body,
+    html {
+        font-size: 16px;
+        background-color: $base-color;
+        overflow: hidden;
+    }
+}
+
+.container {
+    margin: 0vh auto;
+    padding: 5vh 0;
+    max-width: 650px;
+    height: 100vh;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .container {
+        padding: 4vh 0;
+        padding-top: 0;
+
+        .content {
+            flex-direction: column;
+            height: 100vh;
+        }
+    }
+}

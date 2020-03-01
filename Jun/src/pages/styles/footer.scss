@@ -1,0 +1,11 @@
+.footer {
+    text-align: center;
+    color: #222222;
+}
+
+@media only screen and (max-width: 560px) {
+    .footer {
+        visibility: hidden;
+        height: 0;
+    }
+}
