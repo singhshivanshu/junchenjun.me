@@ -30,4 +30,5 @@ module.exports = {
             resolve: 'gatsby-plugin-react-svg',
         },
     ],
+    pathPrefix: `/hello`,
 }
