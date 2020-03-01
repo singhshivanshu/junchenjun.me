@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Router } from '../../constants'
+import Router from '../../constants/Router'
 
 const Menu = props => {
-    const [highlight, setHighlight] = useState([initialHightlightState])
-
     let initialHightlightState
 
     useEffect(() => {
@@ -15,6 +13,8 @@ const Menu = props => {
             [Router.About]: 'highlight',
         })
     }, [])
+
+    const [highlight, setHighlight] = useState([initialHightlightState])
 
     const { setPage } = props
 
