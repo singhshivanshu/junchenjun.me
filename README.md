@@ -1,2 +1,0 @@
-# Jun-Chen
-Resume
