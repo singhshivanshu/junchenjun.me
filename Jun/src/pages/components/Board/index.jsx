@@ -1,11 +1,10 @@
 import React from 'react'
-import Router from '../../constants/Router'
 import About from './About/index'
 import Skills from './Skills/index'
+import Router from '../../../../constants/Router'
 
 const Board = props => {
     const { page } = props
-
     return (
         <section className="board">
             <div className="board-content">

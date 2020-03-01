@@ -1,7 +1,7 @@
 const Router = {
     About: 'About',
     Skills: 'Skills',
-    Experience: 'Experience'
+    Experience: 'Experience',
 }
 
-export default Router;
+export default Router
