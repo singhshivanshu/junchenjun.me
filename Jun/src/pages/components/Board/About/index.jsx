@@ -6,7 +6,7 @@ import YesSvg from '../YesSvg.svg'
 const About = () => {
     return (
         <div>
-            <h1>Hi, I am Jun.</h1>
+            <h1>Hi, I am Jun!</h1>
             <hr />
             <p>Web developer.</p>
             <p>Have a soft spot for beactifully designed websites.</p>

@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react'
 import Router from '../../../../constants/Router'
 
 const Menu = props => {
-    let initialHightlightState
+    let initialHightlightState = ''
+    Object.keys(Router).map(item => {
+        initialHightlightState = { ...initialHightlightState, [item]: '' }
+    })
+
+    const [highlight, setHighlight] = useState(initialHightlightState)
 
     useEffect(() => {
-        Object.keys(Router).map(item => {
-            initialHightlightState = { ...initialHightlightState, [item]: '' }
-        })
         setHighlight({
             ...initialHightlightState,
             [Router.About]: 'highlight',
         })
     }, [])
-
-    const [highlight, setHighlight] = useState([initialHightlightState])
 
     const { setPage } = props
 
