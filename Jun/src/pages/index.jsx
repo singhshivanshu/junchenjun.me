@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import Menu from './components/Menu'
 import './styles/index.scss'
 import Board from './components/Board/index'
+import Router from '../../constants/Router'
 
 const App = () => {
-    const [state, setState] = useState('About')
+    const [state, setState] = useState(Router.About)
 
     return (
         <div className="container">
