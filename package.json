@@ -12,7 +12,6 @@
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-        "deploy": "gatsby build",
         "heroku-postbuild": "gatsby build"
     },
     "dependencies": {
@@ -34,7 +33,6 @@
         "eslint-plugin-import": "^2.20.0",
         "eslint-plugin-react": "^7.18.0",
         "gatsby-plugin-eslint": "^2.0.8",
-        "gh-pages": "^2.2.0",
         "prettier": "^1.19.1"
     }
 }
