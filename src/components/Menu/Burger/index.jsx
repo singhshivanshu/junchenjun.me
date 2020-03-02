@@ -10,7 +10,6 @@ const Burger = ({ open, setOpen }) => {
                 type="button"
                 open={open}
                 onClick={() => {
-                    console.log('open')
                     return setOpen(!open)
                 }}
             >

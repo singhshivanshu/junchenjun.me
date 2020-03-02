@@ -3,11 +3,11 @@
 .board {
     background-color: $board-bg-color;
     height: 100%;
-    display: block;
     width: 100%;
-    overflow: auto;
+    overflow: scroll;
 
     .board-content {
+        // background-color: $board-bg-color;
         padding: 3rem 3rem;
         padding-left: 4rem;
         font-size: 1.1rem;
@@ -92,60 +92,34 @@
     }
 }
 
-.mobile-board {
-    .board-content {
-        padding: 3rem 2rem;
-        font-size: 1rem;
-    }
+@media only screen and (max-width: 500px) {
+    .board {
+        min-height: 100vh;
 
-    .contact-section {
-        justify-content: flex-start;
+        .board-content {
+            padding: 3rem 2rem;
 
-        .contact-icon {
-            svg {
-                width: 1.2rem;
-                height: 1.2rem;
+            .about {
+                p {
+                    margin: 1.5rem 0;
+                }
+                .about-title {
+                    padding-top: 1.2rem;
+                    padding-bottom: 1rem;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .contact-section {
+            justify-content: flex-start;
+
+            .contact-icon {
+                svg {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
             }
         }
     }
 }
-
-// @media only screen and (max-width: 500px) {
-//     .board {
-//         width: 90vw;
-//         margin: 0 auto;
-//         overflow: initial;
-//         height: initial;
-
-//         .board-content {
-//             min-height: 86vh;
-//             margin: 1rem 1rem;
-//             font-size: 1rem;
-//             padding: 0.5rem;
-//             padding-bottom: 5.5rem;
-
-//             .about {
-//                 p {
-//                     font-size: 1rem;
-//                     margin: 1.5rem 0;
-//                 }
-//                 .about-title {
-//                     padding-top: 1.2rem;
-//                     padding-bottom: 1rem;
-//                     font-size: 1.8rem;
-//                 }
-//             }
-//         }
-
-//         .contact-section {
-//             justify-content: flex-start;
-
-//             .contact-icon {
-//                 svg {
-//                     width: 1.2rem;
-//                     height: 1.2rem;
-//                 }
-//             }
-//         }
-//     }
-// }

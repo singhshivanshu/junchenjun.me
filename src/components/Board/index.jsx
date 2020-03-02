@@ -6,8 +6,10 @@ import { isMobileOnly } from 'react-device-detect'
 
 const Board = props => {
     const { page } = props
+    const xxx = '111 board ' + (isMobileOnly ? '333' : '222')
+    console.log(999, xxx)
     return (
-        <section className={'board ' + (isMobileOnly ? 'mobile-board' : '')}>
+        <section className={xxx}>
             <div className="board-content">
                 {page == Router.About && <About />}
                 {page == Router.Skills && <Skills />}
