@@ -1,8 +1,8 @@
-$base-color: #112448;
+$base-color: #0a1429;
 $dot-color: darken($base-color, 1.5%);
 $menu-color: #61dafb;
-$board-bg-color: #0a1429;
+$board-bg-color: #112448;
 $highlight-color: lighten($menu-color, 30%);
-$link-color: darken($menu-color, 0%);
-$board-h1-color: lighten($board-bg-color, 70%); // #3264cd
-$board-text-color: lighten($board-bg-color, 75%);
+$board-h1-color: lighten($board-bg-color, 67%); // #3264cd
+$board-text-color: lighten($board-bg-color, 63%);
+$link-color: darken($board-text-color, 25%);
