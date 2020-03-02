@@ -14,7 +14,7 @@
         padding: 1rem;
         font-size: 1.1rem;
         color: $board-text-color;
-        line-height: 1.68;
+        line-height: 180%;
         font-family: 'Roboto', Arial, sans-serif;
 
         h1 {
@@ -36,6 +36,7 @@
 
         p {
             margin: 0.5rem 0;
+            font-weight: 400;
         }
         a {
             cursor: pointer;
@@ -100,12 +101,25 @@
         .board-content {
             margin: 1rem 1rem;
             font-size: 1.1rem;
-            padding: 0.2rem;
-            padding-bottom: 3rem;
+            padding: 0.5rem;
+            padding-bottom: 5.5rem;
 
             .about {
                 .about-title {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
                     font-size: 1.8rem;
+                }
+            }
+        }
+
+        .contact-section {
+            justify-content: flex-start;
+
+            .contact-icon {
+                svg {
+                    width: 1.2rem;
+                    height: 1.2rem;
                 }
             }
         }
