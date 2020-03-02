@@ -20,6 +20,8 @@ const App = () => {
                     href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
                     rel="stylesheet"
                 />
+                <meta name="theme-color" content="#0a1429">
+                <meta name="apple-mobile-web-app-status-bar-style" content="#0a1429">
             </Helmet>
             <main className="content">
                 <Menu setPage={setState} page={state} />
