@@ -4,7 +4,10 @@ import Router from '../../../../constants/Router'
 const Menu = props => {
     let initialHightlightState = ''
     Object.keys(Router).map(item => {
-        initialHightlightState = { ...initialHightlightState, [item]: '' }
+        initialHightlightState = {
+            ...initialHightlightState,
+            [item]: '',
+        }
     })
 
     const [highlight, setHighlight] = useState(initialHightlightState)

@@ -5,10 +5,9 @@
     height: 100%;
     display: block;
     width: 100%;
-    overflow: scroll;
+    overflow: auto;
 
     .board-content {
-        min-height: 90vh;
         margin: 2rem 2rem;
         margin-left: 3rem;
         padding: 1rem;
@@ -97,8 +96,11 @@
     .board {
         width: 90vw;
         margin: 0 auto;
+        overflow: initial;
+        height: initial;
 
         .board-content {
+            min-height: 86vh;
             margin: 1rem 1rem;
             font-size: 1rem;
             padding: 0.5rem;
