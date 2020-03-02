@@ -16,6 +16,7 @@ import {
 } from '@icons-pack/react-simple-icons'
 import VsCode from '../VsCode.svg'
 import Webpack from '../Webpack.svg'
+import Contact from '../Contact/index'
 
 const Skills = () => {
     return (
@@ -51,8 +52,9 @@ const Skills = () => {
             <Git color="#F05032" />
             <Github color="#ffffff" />
             <VsCode />
-            <p>Love the open source community</p>
-            <p>Love being creative</p>
+            <p>Love the open source community.</p>
+            <p>Love being creative.</p>
+            <Contact />
         </div>
     )
 }

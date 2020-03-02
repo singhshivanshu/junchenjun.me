@@ -16,6 +16,10 @@ const App = () => {
                     rel="stylesheet"
                     href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap"
                 />
+                <link
+                    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+                    rel="stylesheet"
+                />
             </Helmet>
             <main className="content">
                 <Menu setPage={setState} page={state} />

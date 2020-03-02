@@ -3,15 +3,34 @@
 @import './footer.scss';
 @import './colors.scss';
 
+// Dimensions for dots
+$dot-size: 5px;
+$dot-space: 22px;
+
 * {
     margin: 0;
     box-sizing: border-box;
 
     body,
     html {
-        font-size: 16px;
-        background-color: $base-color;
+        font-size: 18px;
         overflow: hidden;
+    }
+
+    body {
+        background: linear-gradient(
+                    90deg,
+                    $base-color ($dot-space - $dot-size),
+                    transparent 1%
+                )
+                center,
+            linear-gradient(
+                    $base-color ($dot-space - $dot-size),
+                    transparent 1%
+                )
+                center,
+            $dot-color;
+        background-size: $dot-space $dot-space;
     }
 }
 
@@ -31,6 +50,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+    body {
+        background-color: $base-color;
+    }
     .container {
         padding: 4vh 0;
         padding-top: 0;
