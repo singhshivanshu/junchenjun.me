@@ -1,0 +1,83 @@
+@import './colors.scss';
+
+// Dimensions for dots
+$dot-size: 3px;
+$dot-space: 12px;
+
+.menu {
+    width: 200px;
+    text-align: right;
+    height: 300px;
+
+    div {
+        position: relative;
+        left: 1rem;
+    }
+}
+
+.menu-item {
+    margin: 7px 0;
+    font-size: 3rem;
+    color: $menu-color;
+    font-family: 'Covered By Your Grace';
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.1s linear;
+
+    &:focus,
+    &:hover {
+        outline: none;
+        color: $highlight-color;
+    }
+}
+
+.menu-item.highlight {
+    color: $highlight-color;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(
+                90deg,
+                $base-color ($dot-space - $dot-size),
+                transparent 1%
+            )
+            center,
+        linear-gradient($base-color ($dot-space - $dot-size), transparent 1%)
+            center,
+        $dot-color;
+    background-size: $dot-space $dot-space;
+    height: 100vh;
+    width: 90vw;
+    text-align: left;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu-close {
+    transform: translateX(-100%);
+}
+
+.mobile-menu-open {
+    transform: none;
+}
+
+.burger {
+    position: absolute;
+    bottom: 6%;
+    right: 1.5vw;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+
+    &:focus {
+        outline: none;
+    }
+}

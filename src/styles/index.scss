@@ -2,10 +2,11 @@
 @import './board.scss';
 @import './footer.scss';
 @import './colors.scss';
+@import './hamburgers/hamburgers.scss';
 
 // Dimensions for dots
-$dot-size: 5px;
-$dot-space: 22px;
+$dot-size: 4px;
+$dot-space: 15px;
 
 * {
     margin: 0;
@@ -51,7 +52,6 @@ $dot-space: 22px;
 @media only screen and (max-width: 500px) {
     body {
         font-size: 16px;
-        background-color: $base-color;
     }
     .container {
         padding: 4vh 0;

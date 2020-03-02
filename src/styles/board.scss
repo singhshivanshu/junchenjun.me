@@ -8,13 +8,13 @@
     overflow: auto;
 
     .board-content {
-        margin: 2rem 2rem;
-        margin-left: 3rem;
-        padding: 1rem;
+        padding: 3rem 3rem;
+        padding-left: 4rem;
         font-size: 1.1rem;
         color: $board-text-color;
         line-height: 180%;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        transition: transform 0.3s ease-in-out;
 
         h1 {
             font-size: 1.4rem;
@@ -92,42 +92,60 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .board {
-        width: 90vw;
-        margin: 0 auto;
-        overflow: initial;
-        height: initial;
+.mobile-board {
+    .board-content {
+        padding: 3rem 2rem;
+        font-size: 1rem;
+    }
 
-        .board-content {
-            min-height: 86vh;
-            margin: 1rem 1rem;
-            font-size: 1rem;
-            padding: 0.5rem;
-            padding-bottom: 5.5rem;
+    .contact-section {
+        justify-content: flex-start;
 
-            .about {
-                p {
-                    font-size: 1rem;
-                    margin: 1.5rem 0;
-                }
-                .about-title {
-                    padding-top: 1.2rem;
-                    padding-bottom: 1rem;
-                    font-size: 1.8rem;
-                }
-            }
-        }
-
-        .contact-section {
-            justify-content: flex-start;
-
-            .contact-icon {
-                svg {
-                    width: 1.2rem;
-                    height: 1.2rem;
-                }
+        .contact-icon {
+            svg {
+                width: 1.2rem;
+                height: 1.2rem;
             }
         }
     }
 }
+
+// @media only screen and (max-width: 500px) {
+//     .board {
+//         width: 90vw;
+//         margin: 0 auto;
+//         overflow: initial;
+//         height: initial;
+
+//         .board-content {
+//             min-height: 86vh;
+//             margin: 1rem 1rem;
+//             font-size: 1rem;
+//             padding: 0.5rem;
+//             padding-bottom: 5.5rem;
+
+//             .about {
+//                 p {
+//                     font-size: 1rem;
+//                     margin: 1.5rem 0;
+//                 }
+//                 .about-title {
+//                     padding-top: 1.2rem;
+//                     padding-bottom: 1rem;
+//                     font-size: 1.8rem;
+//                 }
+//             }
+//         }
+
+//         .contact-section {
+//             justify-content: flex-start;
+
+//             .contact-icon {
+//                 svg {
+//                     width: 1.2rem;
+//                     height: 1.2rem;
+//                 }
+//             }
+//         }
+//     }
+// }

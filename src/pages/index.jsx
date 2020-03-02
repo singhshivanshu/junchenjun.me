@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Menu from './components/Menu'
-import './styles/index.scss'
-import Board from './components/Board/index'
-import Router from '../../constants/Router'
+import '../styles/index.scss'
 import { Helmet } from 'react-helmet'
+import Router from '../constants/Router'
+import Menu from '../components/Menu/index'
+import Board from '../components/Board/index'
 
 const App = () => {
     const [state, setState] = useState(Router.About)

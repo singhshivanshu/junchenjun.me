@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import Router from '../../../../constants/Router'
+import Router from '../../../constants/Router'
 
-const Menu = props => {
+const CommenMenu = props => {
     let initialHightlightState = ''
+
     Object.keys(Router).map(item => {
         initialHightlightState = {
             ...initialHightlightState,
@@ -33,15 +34,14 @@ const Menu = props => {
                             })
                             return setPage(item)
                         }}
-                        className={highlight[item]}
+                        className={'menu-item ' + highlight[item]}
                     >
                         {item}
                     </h1>
                 </div>
             ))}
-            <div className="menu-fill" />
         </nav>
     )
 }
 
-export default Menu
+export default CommenMenu
