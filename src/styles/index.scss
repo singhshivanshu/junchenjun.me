@@ -52,5 +52,8 @@ $dot-space: 15px;
     }
     .container {
         padding: 0;
+        .content {
+            height: 100vh;
+        }
     }
 }
