@@ -36,7 +36,7 @@ const Experience = () => {
                     from Angular to React.
                 </li>
                 <li>
-                    Mobile project : development of the RightCapital mobile app,
+                    Mobile project: development of the RightCapital mobile app,
                     using React Native and Expo platform. Published on both{' '}
                     <a
                         href="https://play.google.com/store/apps/details?id=com.rightcapital.mobileapp"
@@ -68,7 +68,7 @@ const Experience = () => {
                 </li>
             </ul>
             <hr />
-            <h1 className="experience-type">PERSONAL PROJECTS</h1>
+            <h1 className="experience-type">OTHER PROJECTS</h1>
             <h1 className="experience-title">
                 <span>React Native</span>
                 <ReactJs color="#61DAFB" />

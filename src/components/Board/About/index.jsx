@@ -11,8 +11,8 @@ const About = () => {
                     Currently a master student at uOttawa studying Computer
                     Science.
                 </li>
-                <li>A fast learner and always often to new poossibilities.</li>
-                <li> Have a soft spot for nicely designed websites.</li>
+                <li>A fast learner and always open to new poossibilities.</li>
+                <li> Have a soft spot for nicely designed websites~</li>
             </ul>
 
             <Contact />

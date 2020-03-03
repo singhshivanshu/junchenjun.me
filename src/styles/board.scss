@@ -100,7 +100,8 @@
                 display: block;
                 font-size: 0.8rem;
                 line-height: 150%;
-                color: darken($board-text-color, 30%);
+                color: darken($board-text-color, 25%);
+                font-family: Georgia, 'Times New Roman', Times, serif;
                 font-style: italic;
             }
 
@@ -162,15 +163,15 @@
                     font-size: 1.8rem;
                 }
             }
-        }
 
-        .contact-section {
-            justify-content: flex-start;
+            .contact-section {
+                justify-content: flex-start;
 
-            .contact-icon {
-                svg {
-                    width: 1.2rem;
-                    height: 1.2rem;
+                .contact-icon {
+                    svg {
+                        width: 1.2rem;
+                        height: 1.2rem;
+                    }
                 }
             }
         }
