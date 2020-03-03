@@ -35,14 +35,12 @@ $dot-space: 15px;
     margin: 0vh auto;
     padding: 5vh 0;
     max-width: 650px;
-    // height: 100vh;
 
     .content {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: nowrap;
-        // height: 90vh;
     }
 }
 
@@ -52,8 +50,5 @@ $dot-space: 15px;
     }
     .container {
         padding: 0;
-        .content {
-            // height: inherit;
-        }
     }
 }
