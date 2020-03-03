@@ -1,9 +1,20 @@
-$base-color: #0a1429;
+$base-color: #121620;
 $dot-color: darken($base-color, 2%);
-$menu-color: #8cc6e5;
-$board-bg-color: #112448;
-$highlight-color: snow;
-$board-h1-color: lighten($board-bg-color, 73%); // #3264cd
-$board-text-color: lighten($board-bg-color, 69%);
-$link-color: $board-text-color;
+$menu-color: #2681b1;
+$board-bg-color: #1a263e;
+$highlight-menu-color: lighten($menu-color, 30%);
+$board-h1-color: lighten($board-bg-color, 70%); // #3264cd
+$board-text-color: lighten($board-bg-color, 70%);
+$link-color: lighten($menu-color, 10%);
+$highlight-link-color: #75bce1;
 $burger-color: lighten(#00e5ee, 20%);
+
+// $base-color: #0a1429;
+// $dot-color: darken($base-color, 2%);
+// $menu-color: #8cc6e5;
+// $board-bg-color: #112448;
+// $highlight-color: snow;
+// $board-h1-color: lighten($board-bg-color, 73%); // #3264cd
+// $board-text-color: lighten($board-bg-color, 69%);
+// $link-color: $board-text-color;
+// $burger-color: lighten(#00e5ee, 20%);

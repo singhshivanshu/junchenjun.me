@@ -20,6 +20,7 @@ const MobileMenu = props => {
                         <h1
                             className="menu-item"
                             onClick={() => {
+                                document.getElementById('board').scrollTop = 0
                                 setOpen(!open)
                                 return setPage(item)
                             }}

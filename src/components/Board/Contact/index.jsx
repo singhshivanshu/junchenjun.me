@@ -1,6 +1,6 @@
 import React from 'react'
 import { Linkedin, Github } from '@icons-pack/react-simple-icons'
-import Mail from '../mail.svg'
+import Mail from '../../../assets/icons/mail.svg'
 
 const Contact = () => {
     return (
@@ -8,13 +8,31 @@ const Contact = () => {
             <hr />
             <ul className="contact-section">
                 <li className="contact-icon">
-                    <Linkedin color="#ffffff" />
+                    <a
+                        href="https://www.linkedin.com/in/jun-chen-013995180/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Linkedin color="#ffffff" />
+                    </a>
                 </li>
                 <li className="contact-icon">
-                    <Github color="#ffffff" />
+                    <a
+                        href="https://github.com/junchenjun"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Github color="#ffffff" />
+                    </a>
                 </li>
                 <li className="contact-icon">
-                    <Mail />
+                    <a
+                        href="https://github.com/junchenjun"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Mail />
+                    </a>
                 </li>
             </ul>
         </div>

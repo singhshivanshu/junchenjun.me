@@ -32,6 +32,7 @@ const CommenMenu = props => {
                                 ...initialHightlightState,
                                 [item]: 'highlight',
                             })
+                            document.getElementById('board').scrollTop = 0
                             return setPage(item)
                         }}
                         className={'menu-item ' + highlight[item]}

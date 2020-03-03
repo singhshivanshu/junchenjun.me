@@ -14,8 +14,10 @@ import {
     Sass,
     Jest,
 } from '@icons-pack/react-simple-icons'
-import VsCode from '../VsCode.svg'
-import Webpack from '../Webpack.svg'
+import VsCode from '../../../assets/icons/VsCode.svg'
+import Webpack from '../../../assets/icons/Webpack.svg'
+import MacOS from '../../../assets/icons/MacOS.svg'
+
 import Contact from '../Contact/index'
 
 const Skills = () => {
@@ -52,6 +54,7 @@ const Skills = () => {
             <Git color="#F05032" />
             <Github color="#ffffff" />
             <VsCode />
+            <MacOS className="macos-icon" />
             <p>Love the open source community.</p>
             <p>Love being creative.</p>
             <Contact />

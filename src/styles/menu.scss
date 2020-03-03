@@ -27,12 +27,12 @@ $dot-space: 12px;
     &:focus,
     &:hover {
         outline: none;
-        color: $highlight-color;
+        color: $highlight-menu-color;
     }
 }
 
 .menu-item.highlight {
-    color: $highlight-color;
+    color: $highlight-menu-color;
 }
 
 .mobile-menu {
