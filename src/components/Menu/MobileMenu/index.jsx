@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Burger from '../Burger/index'
-import Router from '../../../constants/Router'
+import Router from '../../../utilities/constants/Router'
 
 const MobileMenu = props => {
     const { setPage } = props

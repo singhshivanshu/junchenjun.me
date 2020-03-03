@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/index.scss'
-import Router from '../constants/Router'
+import Router from '../utilities/constants/Router'
 import Menu from '../components/Menu/index'
 import Board from '../components/Board/index'
 import AppHelmet from '../utilities/Helmet/index'

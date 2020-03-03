@@ -27,7 +27,7 @@ const Contact = () => {
                 </li>
                 <li className="contact-icon">
                     <a
-                        href="https://github.com/junchenjun"
+                        href="mailto:junchen.cq@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

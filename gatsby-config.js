@@ -14,8 +14,8 @@ module.exports = {
             resolve: `gatsby-alias-imports`,
             options: {
                 aliases: {
-                    components: `pages/components`,
-                    constants: `pages/constants`,
+                    components: `src/components`,
+                    constants: `src/utilities/constants`,
                 },
             },
         },
