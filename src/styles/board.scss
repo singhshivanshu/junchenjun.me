@@ -2,7 +2,7 @@
 
 .board {
     background-color: $board-bg-color;
-    height: 100%;
+    // height: 100%;
     width: 100%;
     overflow: scroll;
 
@@ -149,10 +149,11 @@
 
 @media only screen and (max-width: 500px) {
     .board {
-        min-height: 100vh;
+        // min-height: 100vh;
 
         .board-content {
             padding: 3rem 2rem;
+            min-height: 100vh;
 
             .about {
                 p {
