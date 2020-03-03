@@ -47,6 +47,7 @@ $dot-space: 15px;
 @media only screen and (max-width: 500px) {
     body {
         font-size: 16px;
+        background: $board-bg-color;
     }
     .container {
         padding: 0;
