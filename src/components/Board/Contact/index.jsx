@@ -1,6 +1,6 @@
 import React from 'react'
 import { Linkedin, Github } from '@icons-pack/react-simple-icons'
-import Mail from '../../../assets/icons/mail.svg'
+import Mail from '../../../assets/icons/Mail.svg'
 
 const Contact = () => {
     return (
