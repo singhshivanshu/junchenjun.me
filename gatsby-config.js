@@ -8,6 +8,9 @@ module.exports = {
     /* Your site config here */
     plugins: [
         {
+            resolve: 'gatsby-plugin-react-svg',
+        },
+        {
             resolve: `gatsby-alias-imports`,
             options: {
                 aliases: {
@@ -23,9 +26,6 @@ module.exports = {
             options: {
                 includePath: 'node_modules',
             },
-        },
-        {
-            resolve: 'gatsby-plugin-react-svg',
         },
     ],
 }
