@@ -4,6 +4,7 @@ import Menu from '../components/Menu/index'
 import Board from '../components/Board/index'
 import router from '../utilities/constants/router'
 import AppHelmet from '../components/Helmet/index'
+import Footer from '../components/Footer/index'
 
 const App = () => {
     const [state, setState] = useState(router.About)
@@ -15,6 +16,7 @@ const App = () => {
                 <Menu setPage={setState} page={state} />
                 <Board page={state} />
             </main>
+            <Footer />
         </div>
     )
 }
