@@ -1,0 +1,43 @@
+@import './colors.scss';
+
+.tooltip-toggle {
+    cursor: pointer;
+    position: relative;
+
+    @media only screen and (min-width: 500px) {
+        //Tooltip text container
+        &::before {
+            position: absolute;
+            top: 1.2rem;
+            left: 2px;
+            background-color: lighten(#bcd9ea, 0%);
+            border-radius: 6px;
+            border: $menu-color 2px solid;
+            color: $base-color;
+            content: attr(aria-label);
+            text-transform: none;
+            padding: 0 0.4rem;
+            z-index: 1;
+            white-space: nowrap;
+        }
+
+        //Setting up the transition
+        &::before,
+        &::after {
+            color: $base-color;
+            font-family: monospace;
+            font-size: 0.8rem;
+            opacity: 0;
+            pointer-events: none;
+            text-align: center;
+        }
+
+        //Triggering the transition
+        &:focus::before,
+        &:focus::after,
+        &:hover::before,
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+}
