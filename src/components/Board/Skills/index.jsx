@@ -20,6 +20,7 @@ import MacOS from '../../../assets/icons/MacOS.svg'
 import Contact from '../Contact/index'
 import { useSpring, animated } from 'react-spring'
 import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
+import WaveLine from '../../Commen/WaveLine/index'
 
 const Skills = () => {
     const animatedProps = useSpring(fadeInFromLeft)
@@ -41,7 +42,7 @@ const Skills = () => {
                 many other more frontend frameworks. Worked closely with the
                 React ecosystem.
             </p>
-            <hr />
+            <WaveLine />
             <h1>Mobile development</h1>
             <ReactJs color="#61DAFB" />
             <Expo color="#ffffff" />
@@ -52,7 +53,7 @@ const Skills = () => {
                 Expo platform. Participated in a mobile project in all stages of
                 its life cycle, both iOS and Android.
             </p>
-            <hr />
+            <WaveLine />
             <h1>What else I love</h1>
             <Git color="#F05032" />
             <Github color="#ffffff" />

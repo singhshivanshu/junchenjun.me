@@ -17,7 +17,6 @@ const About = () => {
                 <li>A fast learner and always open to new poossibilities.</li>
                 <li> Have a soft spot for nicely designed websites~</li>
             </ul>
-
             <Contact />
         </animated.section>
     )

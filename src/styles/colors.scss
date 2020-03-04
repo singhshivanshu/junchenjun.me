@@ -12,9 +12,10 @@ $burger-color: lighten(#00e5ee, 20%);
 // board
 $board-bg-color: #1a263d;
 $board-h1-color: lighten($board-bg-color, 70%);
-$board-text-color: lighten($board-bg-color, 70%);
+$board-text-color: lighten($board-bg-color, 64%);
 $link-color: lighten($menu-color, 10%);
 $highlight-link-color: #75bce1;
+$board-dark-text-color: lighten($board-bg-color, 20%);
 
 @if $dark-theme {
 }

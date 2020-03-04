@@ -3,13 +3,14 @@ import { Linkedin, Github } from '@icons-pack/react-simple-icons'
 import Mail from '../../../assets/icons/Mail.svg'
 import { useSpring, animated } from 'react-spring'
 import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
+import WaveLine from '../../Commen/WaveLine/index'
 
 const Contact = () => {
     const animatedProps = useSpring(fadeInFromLeft)
 
     return (
         <animated.section style={animatedProps}>
-            <hr />
+            <WaveLine />
             <ul className="contact-section">
                 <li className="contact-icon">
                     <a

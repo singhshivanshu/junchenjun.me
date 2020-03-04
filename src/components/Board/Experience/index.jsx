@@ -4,6 +4,7 @@ import RightCapital from '../../../assets/icons/RightCapital.svg'
 import { Gatsby, ReactJs } from '@icons-pack/react-simple-icons'
 import { useSpring, animated } from 'react-spring'
 import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
+import WaveLine from '../../Commen/WaveLine/index'
 
 const Experience = () => {
     const animatedProps = useSpring(fadeInFromLeft)
@@ -21,10 +22,9 @@ const Experience = () => {
             <span className="experience-time">July 2018 ~ August 2019</span>
 
             <p>
-                One year full-time working as a member of the front-end team,
-                worked closely with React ecosystem, using TypeScript as the
-                main programming language. Three projects I have been highly
-                involved:
+                One year full-time working at the front-end team, worked closely
+                with React ecosystem, using TypeScript as the main programming
+                language. Three projects I have been highly involved in:
             </p>
 
             <ul>
@@ -71,7 +71,7 @@ const Experience = () => {
                     using CMS Ghost platform.
                 </li>
             </ul>
-            <hr />
+            <WaveLine />
             <h1 className="experience-type">OTHER PROJECTS</h1>
             <h1 className="experience-title">
                 <span>React Native</span>
