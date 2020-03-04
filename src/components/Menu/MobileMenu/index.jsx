@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Burger from '../Burger/index'
 import { useSpring, animated } from 'react-spring'
 import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
-import router from '../../../utilities/constants/Router'
+import router from '../../../utilities/constants/router'
 
 const MobileMenu = props => {
     const { setPage } = props
