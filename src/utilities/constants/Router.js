@@ -1,7 +1,7 @@
-const Router = {
+const router = {
     About: 'About',
     Skills: 'Skills',
     Experience: 'Experience',
 }
 
-export default Router
+export default router

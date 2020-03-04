@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import '../styles/index.scss'
-import Router from '../utilities/constants/Router'
 import Menu from '../components/Menu/index'
 import Board from '../components/Board/index'
-import AppHelmet from '../utilities/Helmet/index'
+import router from '../utilities/constants/router'
+import AppHelmet from '../components/Helmet/index'
 
 const App = () => {
-    const [state, setState] = useState(Router.About)
+    const [state, setState] = useState(router.About)
 
     return (
         <div className="container">

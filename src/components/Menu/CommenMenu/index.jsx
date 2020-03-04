@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import Router from '../../../utilities/constants/Router'
+import { useSpring, animated } from 'react-spring'
+import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
+import router from '../../../utilities/constants/router'
 
 const CommenMenu = props => {
     let initialHightlightState = ''
 
-    Object.keys(Router).map(item => {
+    Object.keys(router).map(item => {
         initialHightlightState = {
             ...initialHightlightState,
             [item]: '',
@@ -16,16 +18,18 @@ const CommenMenu = props => {
     useEffect(() => {
         setHighlight({
             ...initialHightlightState,
-            [Router.About]: 'highlight',
+            [router.About]: 'highlight',
         })
     }, [])
 
     const { setPage } = props
 
+    const animatedProps = useSpring(fadeInFromLeft)
+
     return (
         <nav className="menu">
-            {Object.keys(Router).map(item => (
-                <div key={item}>
+            {Object.keys(router).map(item => (
+                <animated.div key={item} style={animatedProps}>
                     <h1
                         onClick={() => {
                             setHighlight({
@@ -41,7 +45,7 @@ const CommenMenu = props => {
                     >
                         {item}
                     </h1>
-                </div>
+                </animated.div>
             ))}
         </nav>
     )

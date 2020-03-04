@@ -17,12 +17,15 @@ import {
 import VsCode from '../../../assets/icons/VsCode.svg'
 import Webpack from '../../../assets/icons/Webpack.svg'
 import MacOS from '../../../assets/icons/MacOS.svg'
-
 import Contact from '../Contact/index'
+import { useSpring, animated } from 'react-spring'
+import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 
 const Skills = () => {
+    const animatedProps = useSpring(fadeInFromLeft)
+
     return (
-        <div>
+        <animated.section style={animatedProps}>
             <h1>Web development</h1>
             <Javascript color="#F7DF1E" />
             <Html5 color="#E34F26" size={23} />
@@ -58,7 +61,7 @@ const Skills = () => {
             <p>Love the open source community.</p>
             <p>Love being creative.</p>
             <Contact />
-        </div>
+        </animated.section>
     )
 }
 

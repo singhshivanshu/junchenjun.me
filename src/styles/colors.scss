@@ -1,7 +1,7 @@
 $dark-theme: false !default;
 
 // base
-$base-color: #121620;
+$base-color: #151a25;
 $dot-color: darken($base-color, 2%);
 
 // menu
@@ -10,7 +10,7 @@ $highlight-menu-color: lighten($menu-color, 30%);
 $burger-color: lighten(#00e5ee, 20%);
 
 // board
-$board-bg-color: #1a263e;
+$board-bg-color: #1a263d;
 $board-h1-color: lighten($board-bg-color, 70%);
 $board-text-color: lighten($board-bg-color, 70%);
 $link-color: lighten($menu-color, 10%);

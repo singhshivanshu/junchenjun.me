@@ -2,10 +2,14 @@ import React from 'react'
 import Contact from '../Contact/index'
 import RightCapital from '../../../assets/icons/RightCapital.svg'
 import { Gatsby, ReactJs } from '@icons-pack/react-simple-icons'
+import { useSpring, animated } from 'react-spring'
+import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 
 const Experience = () => {
+    const animatedProps = useSpring(fadeInFromLeft)
+
     return (
-        <section className="experience">
+        <animated.section className="experience" style={animatedProps}>
             <h1 className="experience-type">WORK EXPERIENCE</h1>
             <h1 className="experience-title">
                 <span>RightCapital Inc</span>
@@ -84,7 +88,7 @@ const Experience = () => {
             </h1>
             <p>This very website built with Gatsby and hosted on Heroku~</p>
             <Contact />
-        </section>
+        </animated.section>
     )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import { useSpring, animated } from 'react-spring'
+import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 
 const Burger = ({ open, setOpen }) => {
+    const animatedProps = useSpring(fadeInFromLeft)
     return (
-        <div className="burger">
+        <animated.div className="burger" style={animatedProps}>
             <button
                 className={
                     'hamburger hamburger--arrow-r ' + (open ? 'is-active' : '')
@@ -17,7 +20,7 @@ const Burger = ({ open, setOpen }) => {
                     <span className="hamburger-inner"></span>
                 </span>
             </button>
-        </div>
+        </animated.div>
     )
 }
 

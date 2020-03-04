@@ -1,10 +1,14 @@
 import React from 'react'
 import { Linkedin, Github } from '@icons-pack/react-simple-icons'
 import Mail from '../../../assets/icons/Mail.svg'
+import { useSpring, animated } from 'react-spring'
+import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 
 const Contact = () => {
+    const animatedProps = useSpring(fadeInFromLeft)
+
     return (
-        <div>
+        <animated.section style={animatedProps}>
             <hr />
             <ul className="contact-section">
                 <li className="contact-icon">
@@ -35,7 +39,7 @@ const Contact = () => {
                     </a>
                 </li>
             </ul>
-        </div>
+        </animated.section>
     )
 }
 

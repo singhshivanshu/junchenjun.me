@@ -1,9 +1,12 @@
 import React from 'react'
 import Contact from '../Contact/index'
+import { useSpring, animated } from 'react-spring'
+import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 
 const About = () => {
+    const animatedProps = useSpring(fadeInFromLeft)
     return (
-        <div className="about">
+        <animated.section className="about" style={animatedProps}>
             <h1 className="about-title">Hi, I am Jun. 👋 </h1>
             <ul>
                 <li> I am a web developer. </li>
@@ -16,7 +19,7 @@ const About = () => {
             </ul>
 
             <Contact />
-        </div>
+        </animated.section>
     )
 }
 
