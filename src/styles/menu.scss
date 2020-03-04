@@ -67,6 +67,10 @@ $dot-space: 12px;
     @media only screen and (min-width: 500px) {
         display: none;
     }
+
+    .menu-item {
+        color: $burger-color;
+    }
 }
 
 .mobile-menu-close {
