@@ -6,7 +6,8 @@ import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 import WaveLine from '../../Commen/WaveLine/index'
 
 const Experience = () => {
-    const animatedProps = useSpring(fadeInFromLeft)
+    const { innerWidth: width } = window
+    const animatedProps = width > 500 ? useSpring(fadeInFromLeft) : null
 
     return (
         <animated.section className="experience" style={animatedProps}>
