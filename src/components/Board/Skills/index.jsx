@@ -27,11 +27,11 @@ const Skills = () => {
     const animatedProps = useSpring(fadeInFromLeft)
 
     return (
-        <animated.section style={animatedProps}>
+        <animated.section style={animatedProps} className="skills">
             <h1>Web development</h1>
 
             <ToolTip lable="JavaScript">
-                <Javascript color="#F7DF1E" />
+                <Javascript color="#F0DB4F" />
             </ToolTip>
 
             <ToolTip lable="HTML">
@@ -53,7 +53,7 @@ const Skills = () => {
                 <Jest color="#C21325" />
             </ToolTip>
             <ToolTip lable="Webpack">
-                <Webpack />
+                <Webpack className="webpack-icon" />
             </ToolTip>
             <ToolTip lable="Gatsby">
                 <Gatsby color="#663399" />
@@ -69,10 +69,10 @@ const Skills = () => {
                 <ReactJs color="#61DAFB" />
             </ToolTip>
             <ToolTip lable="Expo">
-                <Expo color="#ffffff" />
+                <Expo className="expo-icon" />
             </ToolTip>
             <ToolTip lable="iOS">
-                <Ios color="#ffffff" />
+                <Ios className="ios-icon" />
             </ToolTip>
             <ToolTip lable="Android">
                 <Android color="#3DDC84" />
@@ -88,10 +88,10 @@ const Skills = () => {
                 <Git color="#F05032" />
             </ToolTip>
             <ToolTip lable="Github">
-                <Github color="#ffffff" />
+                <Github className="github-icon" />
             </ToolTip>
             <ToolTip lable="VsCode">
-                <VsCode />
+                <VsCode className="vscode-icon" />
             </ToolTip>
             <ToolTip lable="MacOS">
                 <MacOS className="macos-icon" />

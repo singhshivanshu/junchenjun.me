@@ -10,10 +10,10 @@
             position: absolute;
             top: 1.2rem;
             left: 2px;
-            background-color: lighten(#bcd9ea, 0%);
+            background-color: $tooltip-bg-color;
             border-radius: 6px;
-            border: $menu-color 2px solid;
-            color: $base-color;
+            border: $tooltip-border-color 2px solid;
+            color: $tooltip-font-color;
             content: attr(aria-label);
             text-transform: none;
             padding: 0 0.4rem;
@@ -24,7 +24,7 @@
         //Setting up the transition
         &::before,
         &::after {
-            color: $base-color;
+            color: $tooltip-font-color;
             font-family: monospace;
             font-size: 0.8rem;
             opacity: 0;

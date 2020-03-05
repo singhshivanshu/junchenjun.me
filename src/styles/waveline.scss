@@ -4,7 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4rem;
+    height: 60px;
+    font-size: 16px;
+    overflow: hidden;
 }
 
 .waveline {
@@ -15,10 +17,10 @@
 .waveline::before {
     content: attr(data-text);
     position: relative;
-    bottom: 1rem;
-    font-size: 2rem;
+    bottom: 18px;
+    font-size: 30px;
     color: transparent;
     text-decoration-style: wavy;
-    text-decoration-color: lighten($color: $board-bg-color, $amount: 5%);
+    text-decoration-color: $waveline-color;
     text-decoration-line: underline;
 }

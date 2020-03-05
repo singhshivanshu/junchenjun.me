@@ -2,6 +2,7 @@ import React from 'react'
 import Contact from '../Contact/index'
 import { useSpring, animated } from 'react-spring'
 import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
+import WaveLine from '../../Commen/WaveLine/index'
 
 const About = () => {
     const animatedProps = useSpring(fadeInFromLeft)
@@ -9,6 +10,7 @@ const About = () => {
         <animated.section className="about" style={animatedProps}>
             <h1 className="about-title-1">Hi, 👋 </h1>
             <h1 className="about-title-2">I am Jun.</h1>
+            <WaveLine />
             <ul>
                 <li> I&apos;d like to call myself a web developer. </li>
                 <li>

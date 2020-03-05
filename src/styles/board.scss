@@ -1,39 +1,39 @@
 @import './colors.scss';
 
 .board::-webkit-scrollbar {
-    width: 4px;
-}
-
-.board::-webkit-scrollbar-thumb {
-    background: darken($menu-color, 34%);
-}
-
-.board::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-.board::-webkit-scrollbar-corner {
-    background-color: transparent;
+    display: none;
 }
 
 .board {
     background-color: $board-bg-color;
     width: 100%;
     overflow: scroll;
+    box-shadow: 0px 0px 100px 25px rgba(#000, 0.2);
+
+    @media only screen and (max-width: 500px) {
+        box-shadow: none;
+    }
 
     .board-content {
         padding: 3rem 3rem;
         padding-left: 4rem;
-        font-size: 1.2rem;
         color: $board-text-color;
-        line-height: 180%;
+        line-height: 1.58;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
             Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         transition: transform 0.3s ease-in-out;
         z-index: 9;
+        font-weight: 400;
+
+        a,
+        p,
+        span {
+            font-size: 1.1rem;
+        }
 
         h1 {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             color: $board-h1-color;
             margin: 1rem 0;
             margin-bottom: 0.9rem;
@@ -56,18 +56,49 @@
             }
         }
         ul {
-            list-style-type: square;
-            padding: 0.5rem;
+            list-style-type: initial;
+            margin: 0;
+            padding: 0;
             padding-left: 1rem;
             font-size: 1rem;
+
+            li {
+                padding: 0.3rem 0;
+            }
         }
         svg {
             margin: 0 5px;
             width: 1.3rem;
             height: 1.3rem;
+            transition: 0.2s;
+            cursor: pointer;
+
             &.macos-icon {
-                fill: #ffffff;
                 width: 3rem;
+            }
+
+            &.webpack-icon {
+                fill: #8dd6f9;
+            }
+
+            &.vscode-icon {
+                fill: #007acc;
+            }
+
+            &.github-icon,
+            &.macos-icon,
+            &.expo-icon,
+            &.ios-icon {
+                fill: #fff;
+                @if $light-theme {
+                    fill: #000;
+                }
+            }
+
+            @if $light-theme {
+                &:not(:hover) {
+                    fill: $highlight-menu-color;
+                }
             }
         }
 
@@ -76,18 +107,23 @@
             .about-title-2 {
                 color: $board-h1-color;
                 font-size: 2.5rem;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                color: $highlight-menu-color;
             }
             .about-title-1 {
                 font-size: 3.8rem;
-                margin-bottom: 2.5rem;
             }
-            ul {
-                // padding-left: 1.5rem;
-                font-size: 1.2rem;
-                margin: 0.8rem 0;
-                margin-top: 1.3rem;
+            > ul {
+                list-style-type: none;
+                padding: 0;
                 li {
-                    padding: 0.5rem 0;
+                    padding: 0.5rem;
+                    display: block;
+                    font-size: 1.1rem;
+                    margin: 0 auto;
+                    text-align: center;
                 }
             }
         }
@@ -99,22 +135,23 @@
 
             .experience-title {
                 display: flex;
+                align-items: center;
+
+                span {
+                    font-size: 1.5rem;
+                }
 
                 svg {
-                    width: 2rem;
-                    height: 2rem;
+                    width: 1.8rem;
+                    height: 1.8rem;
                     margin-left: 0.5rem;
                 }
             }
 
             .experience-position,
             .experience-time {
-                padding-left: 0.5rem;
                 display: block;
-                font-size: 0.8rem;
-                line-height: 150%;
-                color: darken($board-text-color, 25%);
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 0.9rem;
                 font-style: italic;
             }
 
@@ -129,7 +166,7 @@
             padding: 0;
             margin-top: 1rem;
             margin-bottom: 1rem;
-            color: $link-color;
+            color: $contact-link-color;
             font-size: 1.4rem;
             list-style: none;
             display: flex;
@@ -146,13 +183,13 @@
                 svg {
                     width: 1.4rem;
                     height: 1.4rem;
-                    fill: $link-color;
+                    fill: $contact-link-color;
                     transition: 0.3s;
                 }
 
                 &:hover {
                     svg {
-                        fill: $highlight-link-color;
+                        fill: $contact-link-highlight-color;
                     }
                 }
             }
@@ -171,7 +208,7 @@
         overflow: visible;
 
         .board-content {
-            padding: 3rem 2rem;
+            padding: 3rem 10vw;
 
             .about {
                 p {
@@ -179,6 +216,17 @@
                 }
                 .about-title-1 {
                     margin-top: 2rem;
+                }
+
+                > ul {
+                    list-style-type: none;
+                    padding: 0 1rem;
+                    li {
+                        display: block;
+                        font-size: 1.1rem;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
                 }
             }
 

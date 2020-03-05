@@ -1,9 +1,5 @@
 @import './colors.scss';
 
-// Dimensions for dots
-$dot-size: 3px;
-$dot-space: 12px;
-
 .menu {
     width: 200px;
     text-align: right;
@@ -44,16 +40,7 @@ $dot-space: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(
-                90deg,
-                $base-color ($dot-space - $dot-size),
-                transparent 1%
-            )
-            center,
-        linear-gradient($base-color ($dot-space - $dot-size), transparent 1%)
-            center,
-        $dot-color;
-    background-size: $dot-space $dot-space;
+    background: $mobile-menu-bg-color;
     height: 100vh;
     width: 90vw;
     text-align: left;
@@ -69,7 +56,7 @@ $dot-space: 12px;
     }
 
     .menu-item {
-        color: $burger-color;
+        color: $mobile-menu-item-color;
     }
 }
 
