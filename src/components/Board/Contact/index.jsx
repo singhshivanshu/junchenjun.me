@@ -6,8 +6,11 @@ import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 import WaveLine from '../../Commen/WaveLine/index'
 
 const Contact = () => {
-    const { innerWidth: width } = window
-    const animatedProps = width > 500 ? useSpring(fadeInFromLeft) : null
+    let animatedProps
+    if (typeof window !== `undefined`) {
+        const { innerWidth: width } = window
+        animatedProps = width > 500 ? useSpring(fadeInFromLeft) : null
+    }
 
     return (
         <animated.section style={animatedProps}>

@@ -24,8 +24,11 @@ import WaveLine from '../../Commen/WaveLine/index'
 import ToolTip from '../../Commen/ToolTip/index'
 
 const Skills = () => {
-    const { innerWidth: width } = window
-    const animatedProps = width > 500 ? useSpring(fadeInFromLeft) : null
+    let animatedProps
+    if (typeof window !== `undefined`) {
+        const { innerWidth: width } = window
+        animatedProps = width > 500 ? useSpring(fadeInFromLeft) : null
+    }
 
     return (
         <animated.section style={animatedProps} className="skills">
