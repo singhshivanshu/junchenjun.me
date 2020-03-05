@@ -14,9 +14,9 @@ import {
     Sass,
     Jest,
 } from '@icons-pack/react-simple-icons'
-import VsCode from '../../../assets/icons/VsCode.svg'
-import Webpack from '../../../assets/icons/Webpack.svg'
-import MacOS from '../../../assets/icons/MacOS.svg'
+import VsCode from '../../../assets/icons/vscode.inline.svg'
+import Webpack from '../../../assets/icons/webpack.inline.svg'
+import MacOS from '../../../assets/icons/macos.inline.svg'
 import Contact from '../Contact/index'
 import { useSpring, animated } from 'react-spring'
 import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'

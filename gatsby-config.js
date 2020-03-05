@@ -9,6 +9,11 @@ module.exports = {
     plugins: [
         {
             resolve: 'gatsby-plugin-react-svg',
+            options: {
+                rule: {
+                    include: /\.inline\.svg$/,
+                },
+            },
         },
         {
             resolve: `gatsby-alias-imports`,
@@ -25,6 +30,13 @@ module.exports = {
             resolve: `gatsby-plugin-sass`,
             options: {
                 includePath: 'node_modules',
+            },
+        },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+                trackingId: 'UA-159830781-1',
             },
         },
     ],

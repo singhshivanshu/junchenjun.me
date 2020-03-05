@@ -1,6 +1,6 @@
 import React from 'react'
 import { Linkedin, Github } from '@icons-pack/react-simple-icons'
-import Mail from '../../../assets/icons/Mail.svg'
+import Mail from '../../../assets/icons/mail.inline.svg'
 import { useSpring, animated } from 'react-spring'
 import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 import WaveLine from '../../Commen/WaveLine/index'

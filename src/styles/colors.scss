@@ -74,8 +74,8 @@ $footer-text-color: darken($menu-color, 15%);
     $contact-link-highlight-color: $highlight-menu-color;
 
     // mobile menu
-    $mobile-menu-item-color: #000;
-    $mobile-menu-bg-color: #e3f2fd;
+    $mobile-menu-item-color: $highlight-menu-color;
+    $mobile-menu-bg-color: $base-color;
 
     // footer
     $footer-text-color: lighten($menu-color, 50%);
