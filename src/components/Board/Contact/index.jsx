@@ -1,19 +1,11 @@
 import React from 'react'
 import { Linkedin, Github } from '@icons-pack/react-simple-icons'
 import Mail from '../../../assets/icons/mail.inline.svg'
-import { useSpring, animated } from 'react-spring'
-import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 import WaveLine from '../../Commen/WaveLine/index'
 
 const Contact = () => {
-    let animatedProps
-    if (typeof window !== `undefined`) {
-        const { innerWidth: width } = window
-        animatedProps = width > 500 ? useSpring(fadeInFromLeft) : null
-    }
-
     return (
-        <animated.section style={animatedProps}>
+        <section>
             <WaveLine />
             <ul className="contact-section">
                 <li className="contact-icon">
@@ -44,7 +36,7 @@ const Contact = () => {
                     </a>
                 </li>
             </ul>
-        </animated.section>
+        </section>
     )
 }
 

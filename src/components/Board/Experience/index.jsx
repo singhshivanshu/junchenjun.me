@@ -1,19 +1,11 @@
 import React from 'react'
 import Contact from '../Contact/index'
 import { Gatsby, ReactJs } from '@icons-pack/react-simple-icons'
-import { useSpring, animated } from 'react-spring'
-import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 import WaveLine from '../../Commen/WaveLine/index'
 
 const Experience = () => {
-    let animatedProps
-    if (typeof window !== `undefined`) {
-        const { innerWidth: width } = window
-        animatedProps = width > 500 ? useSpring(fadeInFromLeft) : null
-    }
-
     return (
-        <animated.section className="experience" style={animatedProps}>
+        <section className="experience">
             <h1 className="experience-type">WORK EXPERIENCE</h1>
             <h1 className="experience-title">
                 <span>RightCapital Inc.</span>
@@ -100,7 +92,7 @@ const Experience = () => {
                 built with Gatsby and hosted on Heroku~
             </p>
             <Contact />
-        </animated.section>
+        </section>
     )
 }
 

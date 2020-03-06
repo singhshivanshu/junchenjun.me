@@ -18,20 +18,12 @@ import VsCode from '../../../assets/icons/vscode.inline.svg'
 import Webpack from '../../../assets/icons/webpack.inline.svg'
 import MacOS from '../../../assets/icons/macos.inline.svg'
 import Contact from '../Contact/index'
-import { useSpring, animated } from 'react-spring'
-import fadeInFromLeft from '../../../utilities/animations/fadeInFromLeft'
 import WaveLine from '../../Commen/WaveLine/index'
 import ToolTip from '../../Commen/ToolTip/index'
 
 const Skills = () => {
-    let animatedProps
-    if (typeof window !== `undefined`) {
-        const { innerWidth: width } = window
-        animatedProps = width > 500 ? useSpring(fadeInFromLeft) : null
-    }
-
     return (
-        <animated.section style={animatedProps} className="skills">
+        <section className="skills">
             <h1>Web development</h1>
 
             <ToolTip lable="JavaScript">
@@ -103,7 +95,7 @@ const Skills = () => {
             <p>Love the open source community.</p>
             <p>Love being creative.</p>
             <Contact />
-        </animated.section>
+        </section>
     )
 }
 

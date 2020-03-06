@@ -2,7 +2,6 @@
 
 .footer {
     position: absolute;
-    font-size: 0.6rem;
     font-family: monospace;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -10,10 +9,18 @@
     bottom: 5vh;
     right: -1rem;
     width: 1.5rem;
+    font-size: 0.6rem;
+
+    div {
+        font-size: 0.6rem;
+    }
 
     @media only screen and (max-width: 710px) {
         right: 0;
         top: 0;
-        font-size: 0.8rem;
+
+        div {
+            font-size: 0.8rem;
+        }
     }
 }
