@@ -5,7 +5,7 @@ import WaveLine from '../../Commen/WaveLine/index'
 
 const Experience = () => {
     return (
-        <section className="experience">
+        <section className="experience fade-in-from-left no-animation-on-mobile ">
             <h1 className="experience-type">WORK EXPERIENCE</h1>
             <h1 className="experience-title">
                 <span>RightCapital Inc.</span>

@@ -11,16 +11,8 @@
     width: 1.5rem;
     font-size: 0.6rem;
 
-    div {
-        font-size: 0.6rem;
-    }
-
     @media only screen and (max-width: 710px) {
         right: 0;
         top: 0;
-
-        div {
-            font-size: 0.8rem;
-        }
     }
 }

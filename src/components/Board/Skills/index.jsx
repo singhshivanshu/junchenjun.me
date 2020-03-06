@@ -23,7 +23,7 @@ import ToolTip from '../../Commen/ToolTip/index'
 
 const Skills = () => {
     return (
-        <section className="skills">
+        <section className="skills fade-in-from-left no-animation-on-mobile ">
             <h1>Web development</h1>
 
             <ToolTip lable="JavaScript">

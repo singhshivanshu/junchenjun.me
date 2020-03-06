@@ -32,6 +32,28 @@ $dot-space: 15px;
     }
 }
 
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-0.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-from-left {
+    animation-name: fadeInFromLeft;
+    animation-duration: 0.5s;
+}
+
+.no-animation-on-mobile {
+    @media only screen and (max-width: 500px) {
+        animation: none;
+    }
+}
+
 .container {
     margin: 0vh auto;
     padding: 5vh 0;

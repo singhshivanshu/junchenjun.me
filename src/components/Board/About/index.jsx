@@ -4,8 +4,13 @@ import WaveLine from '../../Commen/WaveLine/index'
 
 const About = () => {
     return (
-        <section className="about">
-            <h1 className="about-title-1">Hi, 👋 </h1>
+        <section className="about fade-in-from-left no-animation-on-mobile ">
+            <h1 className="about-title-1">
+                <span className="buzz" data-buzz="Hi,">
+                    Hi,
+                </span>{' '}
+                👋
+            </h1>
             <h1 className="about-title-2">I am Jun.</h1>
             <WaveLine />
             <ul>
