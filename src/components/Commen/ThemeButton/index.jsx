@@ -19,7 +19,7 @@ const ThemeButton = props => {
                     onClick={() => changeTheme()}
                     className={'theme-button'}
                 >
-                    {/* <span className="theme-button-heart" /> */}
+                    <span className="theme-button-heart" />
                 </button>
             </ToolTip>
         </div>
