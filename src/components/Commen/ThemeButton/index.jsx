@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { changeTheme } from '../../../actions/index'
-// import ToolTip from '../ToolTip/index'
+import ToolTip from '../ToolTip/index'
 
 const ThemeButton = props => {
     const { theme, changeTheme } = props
@@ -12,13 +12,16 @@ const ThemeButton = props => {
                 'theme-button-wrapper fade-in-from-left no-animation-on-mobile'
             }
         >
-            {/* <ToolTip
+            <ToolTip
                 lable={theme == 'theme-light' ? 'Lights out' : 'Lights on'}
-            > */}
-            <button onClick={() => changeTheme()} className={'theme-button'}>
-                <span className="theme-button-heart" />
-            </button>
-            {/* </ToolTip> */}
+            >
+                <button
+                    onClick={() => changeTheme()}
+                    className={'theme-button'}
+                >
+                    {/* <span className="theme-button-heart" /> */}
+                </button>
+            </ToolTip>
         </div>
     )
 }
