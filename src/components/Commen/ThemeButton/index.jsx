@@ -7,17 +7,22 @@ const ThemeButton = props => {
     const { theme, changeTheme } = props
     console.log(theme)
     return (
-        // <div
-        //     className={
-        //         'theme-button-wrapper fade-in-from-left no-animation-on-mobile'
-        //     }
-        // >
-        <ToolTip lable={theme == 'theme-light' ? 'Lights out' : 'Lights on'}>
-            <button onClick={() => changeTheme()} className={'theme-button'}>
-                <span className="theme-button-heart" />
-            </button>
-        </ToolTip>
-        // </div>
+        <div
+            className={
+                'theme-button-wrapper fade-in-from-left no-animation-on-mobile'
+            }
+        >
+            <ToolTip
+                lable={theme == 'theme-light' ? 'Lights out' : 'Lights on'}
+            >
+                <button
+                    onClick={() => changeTheme()}
+                    className={'theme-button'}
+                >
+                    <span className="theme-button-heart" />
+                </button>
+            </ToolTip>
+        </div>
     )
 }
 

@@ -32,7 +32,6 @@
         }
         display: block;
         position: absolute;
-        content: '';
         border-radius: 50%;
         height: 10px;
         width: 10px;
@@ -78,78 +77,5 @@
             top: 4px;
             left: 4px;
         }
-    }
-}
-
-.theme-button {
-    @include themify($themes) {
-        background-color: themed('board-bg-color');
-        border-color: themed('theme-button-border-color');
-    }
-    cursor: pointer;
-    display: block;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    transition: border 0.25s linear;
-    position: relative;
-
-    &:focus {
-        outline: none;
-    }
-}
-
-.theme-button-heart {
-    position: absolute;
-    @include themify($themes) {
-        background-color: themed('theme-button-heart-color');
-    }
-    display: block;
-    position: absolute;
-    content: '';
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    top: 4px;
-    left: 4px;
-    margin: auto;
-    transition: background-color 0.25s linear;
-    animation-name: zoom;
-    animation-duration: 0.25s linear;
-
-    &:focus {
-        outline: none;
-    }
-}
-
-.theme-button {
-    &:hover {
-        @include themify($themes) {
-            border-color: themed('highlight-menu-color');
-        }
-        .theme-button-heart {
-            @include themify($themes) {
-                background-color: themed('theme-button-heart-color-hightlight');
-            }
-        }
-    }
-}
-
-@keyframes zoom {
-    from {
-        opacity: 0;
-        height: 0px;
-        width: 0px;
-        top: 10px;
-        left: 10px;
-    }
-    to {
-        opacity: 1;
-        height: 10px;
-        width: 10px;
-        top: 4px;
-        left: 4px;
     }
 }
