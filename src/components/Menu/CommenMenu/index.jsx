@@ -23,7 +23,7 @@ const CommenMenu = props => {
     const { setPage } = props
 
     return (
-        <nav className="menu">
+        <nav className="menu dark">
             {Object.keys(router).map(item => (
                 <div key={item} className="fade-in-from-left">
                     <h1

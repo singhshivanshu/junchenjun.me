@@ -1,5 +1,7 @@
 // Hamburger
 // ==================================================
+
+@import '../themes/index.scss';
 .hamburger {
     padding: $hamburger-padding-y $hamburger-padding-x;
     display: inline-block;
@@ -42,7 +44,9 @@
         .hamburger-inner,
         .hamburger-inner::before,
         .hamburger-inner::after {
-            background-color: $hamburger-active-layer-color;
+            @include themify($themes) {
+                background-color: themed('burger-color');
+            }
         }
     }
 }
@@ -62,9 +66,11 @@
     &,
     &::before,
     &::after {
+        @include themify($themes) {
+            background-color: themed('burger-color');
+        }
         width: $hamburger-layer-width;
         height: $hamburger-layer-height;
-        background-color: $hamburger-layer-color;
         border-radius: $hamburger-layer-border-radius;
         position: absolute;
         transition-property: transform;

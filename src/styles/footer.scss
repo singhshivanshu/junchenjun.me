@@ -1,11 +1,13 @@
-@import './colors.scss';
+@import './themes';
 
 .footer {
+    @include themify($themes) {
+        color: themed('footer-text-color');
+    }
     position: absolute;
     font-family: monospace;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: $footer-text-color;
     bottom: 5vh;
     right: -1rem;
     width: 1.5rem;

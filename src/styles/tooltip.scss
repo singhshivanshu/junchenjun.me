@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import './themes';
 
 .tooltip-toggle {
     cursor: pointer;
@@ -7,13 +7,18 @@
     @media only screen and (min-width: 500px) {
         //Tooltip text container
         &::before {
+            @include themify($themes) {
+                background-color: themed('tooltip-bg-color');
+                color: themed('tooltip-font-color');
+                border-color: themed('tooltip-border-color');
+            }
+
             position: absolute;
             top: 1.2rem;
             left: 2px;
-            background-color: $tooltip-bg-color;
             border-radius: 6px;
-            border: $tooltip-border-color 2px solid;
-            color: $tooltip-font-color;
+            border-width: 2px;
+            border-style: solid;
             content: attr(aria-label);
             text-transform: none;
             padding: 0 0.4rem;
@@ -24,7 +29,9 @@
         //Setting up the transition
         &::before,
         &::after {
-            color: $tooltip-font-color;
+            @include themify($themes) {
+                color: themed('tooltip-font-color');
+            }
             font-family: monospace;
             font-size: 0.8rem;
             opacity: 0;

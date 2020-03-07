@@ -1,10 +1,11 @@
 @import './menu.scss';
 @import './board.scss';
-@import './colors.scss';
 @import './hamburgers/hamburgers.scss';
 @import './waveline.scss';
 @import './tooltip.scss';
+@import './theme-button.scss';
 @import './footer.scss';
+@import './themes';
 
 // Dimensions for dots
 $dot-size: 4px;
@@ -14,23 +15,68 @@ $dot-space: 15px;
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
+}
 
-    body {
-        background: linear-gradient(
-                    90deg,
-                    $base-color ($dot-space - $dot-size),
-                    transparent 1%
-                )
-                center,
-            linear-gradient(
-                    $base-color ($dot-space - $dot-size),
-                    transparent 1%
-                )
-                center,
-            $dot-color;
-        background-size: $dot-space $dot-space;
+.app-root.theme-dark {
+    background: linear-gradient(
+                90deg,
+                $dark-base-color ($dot-space - $dot-size),
+                transparent 1%
+            )
+            center,
+        linear-gradient(
+                $dark-base-color ($dot-space - $dot-size),
+                transparent 1%
+            )
+            center,
+        $dark-dot-color;
+    background-size: $dot-space $dot-space;
+    // transition-duration: 0.3s;
+}
+
+.app-root.theme-light {
+    background: linear-gradient(
+                90deg,
+                $light-base-color ($dot-space - $dot-size),
+                transparent 1%
+            )
+            center,
+        linear-gradient(
+                $light-base-color ($dot-space - $dot-size),
+                transparent 1%
+            )
+            center,
+        $light-dot-color;
+    background-size: $dot-space $dot-space;
+    // transition-duration: 0.3s;
+}
+
+.container {
+    margin: 0vh auto;
+    padding: 5vh 0;
+    max-width: 680px;
+    position: relative;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    body {
+        @include themify($themes) {
+            background: themed('board-bg-color');
+        }
+    }
+    .container {
+        padding: 0;
+    }
+}
+
+// animations
 
 @keyframes fadeInFromLeft {
     from {
@@ -51,28 +97,5 @@ $dot-space: 15px;
 .no-animation-on-mobile {
     @media only screen and (max-width: 500px) {
         animation: none;
-    }
-}
-
-.container {
-    margin: 0vh auto;
-    padding: 5vh 0;
-    max-width: 680px;
-    position: relative;
-
-    .content {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: nowrap;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    body {
-        background: $board-bg-color;
-    }
-    .container {
-        padding: 0;
     }
 }

@@ -1,0 +1,82 @@
+@import './dark.scss';
+@import './light.scss';
+
+$themes: (
+    light: (
+        base-color: #f1f1f1,
+        dot-color: darken(#f1f1f1, 3%),
+        menu-color: #212121,
+        highlight-menu-color: #304ffe,
+        burger-color: navy,
+        board-bg-color: #fff,
+        board-h1-color: #212121,
+        board-text-color: #212529,
+        link-color: $light-highlight-menu-color,
+        highlight-link-color: $light-highlight-menu-color,
+        board-dark-text-color: #a5b1c2,
+        svg-cover-color: $light-highlight-menu-color,
+        waveline-color: #a5b1c2,
+        scrollbar-color: darken($light-board-bg-color, 10%),
+        tooltip-bg-color: lighten(#67e6dc, 30%),
+        tooltip-border-color: $light-highlight-menu-color,
+        tooltip-font-color: $light-highlight-menu-color,
+        contact-link-color: darken(#a5b1c2, 20%),
+        contact-link-highlight-color: $light-highlight-menu-color,
+        mobile-menu-item-color: $light-highlight-menu-color,
+        mobile-menu-bg-color: $light-base-color,
+        footer-text-color: lighten($light-menu-color, 50%),
+        theme-button-heart-color: $light-theme-button-heart-color,
+        theme-button-border-color: $light-theme-button-border-color,
+        theme-button-heart-color-hightlight: $light-highlight-menu-color,
+    ),
+    dark: (
+        base-color: #151a25,
+        dot-color: darken($dark-base-color, 2%),
+        board-bg-color: #1a263d,
+        board-h1-color: lighten($dark-board-bg-color, 60%),
+        board-text-color: lighten($dark-board-bg-color, 55%),
+        link-color: lighten($dark-menu-color, 10%),
+        highlight-link-color: #75bce1,
+        board-dark-text-color: lighten($dark-board-bg-color, 25%),
+        svg-fill-color: #fff,
+        menu-color: #2681b1,
+        highlight-menu-color: lighten($dark-menu-color, 30%),
+        burger-color: lighten(#00e5ee, 20%),
+        mobile-menu-item-color: #2681b1,
+        mobile-menu-bg-color: $dark-base-color,
+        mobile-dot-color: darken($dark-base-color, 2%),
+        tooltip-bg-color: lighten(#bcd9ea, 0%),
+        tooltip-border-color: $dark-menu-color,
+        tooltip-font-color: $dark-base-color,
+        contact-link-color: #a5b1c2,
+        contact-link-highlight-color: $dark-contact-link-highlight-color,
+        footer-text-color: $dark-footer-text-color,
+        theme-button-heart-color: $dark-theme-button-heart-color,
+        theme-button-border-color: $dark-theme-button-border-color,
+        theme-button-heart-color-hightlight: $dark-highlight-menu-color,
+    ),
+);
+
+@mixin themify($themes: $themes) {
+    @each $theme, $map in $themes {
+        .theme-#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge(
+                    $theme-map,
+                    (
+                        $key: $value,
+                    )
+                ) !global;
+            }
+
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}

@@ -1,0 +1,44 @@
+// base
+$dark-base-color: #151a25;
+$dark-dot-color: darken($dark-base-color, 2%);
+
+// menu
+$dark-menu-color: #2681b1;
+$dark-highlight-menu-color: lighten($dark-menu-color, 30%);
+$dark-burger-color: lighten(#00e5ee, 20%);
+
+// mobile menu
+$dark-mobile-menu-item-color: #2681b1;
+$dark-mobile-menu-bg-color: $dark-base-color;
+$dark-mobile-dot-color: darken($dark-base-color, 2%);
+
+// board
+$dark-board-bg-color: #1a263d;
+$dark-board-h1-color: lighten($dark-board-bg-color, 60%);
+$dark-board-text-color: lighten($dark-board-bg-color, 55%);
+$dark-link-color: lighten($dark-menu-color, 10%);
+$dark-highlight-link-color: #75bce1;
+$dark-board-dark-text-color: lighten($dark-board-bg-color, 25%);
+
+// waveline
+$dark-waveline-color: lighten($dark-board-bg-color, 5%);
+
+// scrollbar
+$dark-scrollbar-color: darken($dark-menu-color, 34%);
+
+// tooltip
+$dark-tooltip-bg-color: lighten(#bcd9ea, 0%);
+$dark-tooltip-border-color: $dark-menu-color;
+$dark-tooltip-font-color: $dark-base-color;
+
+// contact
+$dark-contact-link-color: #a5b1c2;
+$dark-contact-link-highlight-color: $dark-highlight-menu-color;
+
+// footer
+$dark-footer-text-color: darken($dark-menu-color, 15%);
+
+// theme button
+$dark-theme-button-heart-color: transparant;
+$dark-theme-button-heart-color-hightlight: $dark-highlight-menu-color;
+$dark-theme-button-border-color: lighten($dark-board-bg-color, 18%);

@@ -1,4 +1,32 @@
-@import './colors.scss';
+@import './themes';
+
+@mixin menu-item {
+    .menu-item {
+        @include themify($themes) {
+            color: themed('menu-color');
+        }
+        margin: 7px 0;
+        font-size: 3rem;
+        font-family: 'Covered By Your Grace';
+        display: inline-block;
+        cursor: pointer;
+        transition: color 0.1s linear;
+
+        &:focus,
+        &:hover {
+            @include themify($themes) {
+                color: themed('highlight-menu-color');
+            }
+            outline: none;
+        }
+    }
+
+    .menu-item.highlight {
+        @include themify($themes) {
+            color: themed('highlight-menu-color');
+        }
+    }
+}
 
 .menu {
     width: 200px;
@@ -11,36 +39,20 @@
         left: 1rem;
     }
 
+    @include menu-item();
+
     @media only screen and (max-width: 500px) {
         display: none;
     }
 }
 
-.menu-item {
-    margin: 7px 0;
-    font-size: 3rem;
-    color: $menu-color;
-    font-family: 'Covered By Your Grace';
-    display: inline-block;
-    cursor: pointer;
-    transition: color 0.1s linear;
-
-    &:focus,
-    &:hover {
-        outline: none;
-        color: $highlight-menu-color;
-    }
-}
-
-.menu-item.highlight {
-    color: $highlight-menu-color;
-}
-
 .mobile-menu {
+    @include themify($themes) {
+        background: themed('mobile-menu-bg-color');
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: $mobile-menu-bg-color;
     height: 100vh;
     width: 90vw;
     text-align: left;
@@ -55,8 +67,12 @@
         display: none;
     }
 
+    @include menu-item();
+
     .menu-item {
-        color: $mobile-menu-item-color;
+        @include themify($themes) {
+            color: themed('mobile-menu-item-color');
+        }
     }
 }
 

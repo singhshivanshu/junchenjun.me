@@ -1,0 +1,43 @@
+// base
+$light-base-color: #f1f1f1;
+$light-dot-color: darken(#f1f1f1, 3%);
+
+// menu
+$light-menu-color: #212121;
+$light-highlight-menu-color: #304ffe;
+$light-burger-color: navy;
+
+// board
+$light-board-bg-color: #fff;
+$light-board-h1-color: #212121;
+$light-board-text-color: #212529;
+$light-link-color: $light-highlight-menu-color;
+$light-highlight-link-color: $light-highlight-menu-color;
+$light-board-dark-text-color: #a5b1c2;
+
+// waveline
+$light-waveline-color: #a5b1c2;
+
+// scrollbar
+$light-scrollbar-color: darken($light-board-bg-color, 10%);
+
+// tooltip
+$light-tooltip-bg-color: lighten(#67e6dc, 30%);
+$light-tooltip-border-color: $light-highlight-menu-color;
+$light-tooltip-font-color: $light-highlight-menu-color;
+
+// contact
+$light-contact-link-color: darken(#a5b1c2, 20%);
+$light-contact-link-highlight-color: $light-highlight-menu-color;
+
+// mobile menu
+$light-mobile-menu-item-color: $light-highlight-menu-color;
+$light-mobile-menu-bg-color: $light-base-color;
+
+// footer
+$light-footer-text-color: lighten($light-menu-color, 50%);
+
+// theme button
+$light-theme-button-heart-color: darken($light-board-bg-color, 10%);
+$light-theme-button-heart-color-hightlight: $light-highlight-menu-color;
+$light-theme-button-border-color: darken($light-board-bg-color, 15%);
