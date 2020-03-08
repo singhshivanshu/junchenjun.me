@@ -1,11 +1,11 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { changeTheme } from '../../../actions/index'
+import { useSelector, useDispatch } from 'react-redux'
 import ToolTip from '../ToolTip/index'
+import { changeTheme } from '../../../actions/index'
 
-const ThemeButton = props => {
-    const { theme, changeTheme } = props
-    console.log(theme)
+const ThemeButton = () => {
+    const theme = useSelector(state => state.themeReducer.theme)
+    const dispatch = useDispatch()
     return (
         <div
             className={
@@ -16,7 +16,7 @@ const ThemeButton = props => {
                 lable={theme == 'theme-light' ? 'Lights out' : 'Lights on'}
             >
                 <button
-                    onClick={() => changeTheme()}
+                    onClick={() => dispatch(changeTheme())}
                     className={'theme-button'}
                 >
                     <span className="theme-button-heart" />
@@ -26,14 +26,4 @@ const ThemeButton = props => {
     )
 }
 
-const mapStateToProps = state => {
-    return { theme: state.themeReducer.theme }
-}
-
-const mapDispatchToProps = dispatch => {
-    return {
-        changeTheme: () => dispatch(changeTheme()),
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(ThemeButton)
+export default ThemeButton

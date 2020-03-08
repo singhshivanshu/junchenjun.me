@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import { connect } from 'react-redux'
-import '../styles/index.scss'
+import { useSelector } from 'react-redux'
 import Menu from '../components/Menu/index'
 import Board from '../components/Board/index'
 import router from '../utilities/constants/router'
 import AppHelmet from '../components/Helmet/index'
 import Footer from '../components/Footer/index'
+import '../styles/index.scss'
 
-const App = props => {
+const App = () => {
     const [state, setState] = useState(router.About)
-    const { theme } = props
+    const theme = useSelector(state => state.themeReducer.theme)
 
     return (
         <div className={'app-root ' + theme}>
@@ -25,8 +25,4 @@ const App = props => {
     )
 }
 
-const mapStateToProps = state => {
-    return { theme: state.themeReducer.theme }
-}
-
-export default connect(mapStateToProps)(App)
+export default App
