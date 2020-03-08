@@ -8,6 +8,18 @@ module.exports = {
     /* Your site config here */
     plugins: [
         {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `junchenjun.me`,
+                short_name: `junchenjun.me`,
+                start_url: `/`,
+                background_color: `#fff`,
+                theme_color: `#304ffe`,
+                icon: `src/assets/icons/favicon.png`,
+                display: `standalone`,
+            },
+        },
+        {
             resolve: 'gatsby-plugin-react-svg',
             options: {
                 rule: {
