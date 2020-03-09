@@ -2,6 +2,7 @@ import React from 'react'
 import Contact from '../Contact/index'
 import { Gatsby, ReactJs } from '@icons-pack/react-simple-icons'
 import WaveLine from '../../Commen/WaveLine/index'
+import Suitcase from '../../../assets/icons/suitcase.inline.svg'
 
 const Experience = () => {
     return (
@@ -10,10 +11,16 @@ const Experience = () => {
             <h1 className="experience-title">
                 <span>RightCapital Inc.</span>
             </h1>
-            <span className="experience-position">
-                Software Engineer Intern
-            </span>
-            <span className="experience-time">July 2018 ~ August 2019</span>
+            <div className="experience-position-wrapper">
+                <div className="experience-position-suitcase-svg-wrapper">
+                    <Suitcase className="experience-position-suitcase-svg" />
+                </div>
+
+                <div className="experience-position-text">
+                    <span>Software Engineer Intern</span>
+                    <span>July 2018 ~ August 2019</span>
+                </div>
+            </div>
 
             <p>
                 One year full-time working in the front-end team, worked closely
@@ -90,7 +97,6 @@ const Experience = () => {
                 <a>BAO</a>: an RSS feed reader app build with React Native and
                 Redux.
             </p>
-            <div className="margin-top-block" />
             <Contact />
         </section>
     )

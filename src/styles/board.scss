@@ -14,6 +14,7 @@
     box-shadow: 0px 0px 100px 25px rgba(#000, 0.2);
 
     @media only screen and (max-width: 500px) {
+        overflow: visible;
         box-shadow: none;
     }
 
@@ -192,29 +193,54 @@
             .experience-title {
                 display: flex;
                 align-items: center;
-
                 span {
                     font-size: 1.5rem;
                 }
+            }
 
-                svg {
-                    width: 1.8rem;
-                    height: 1.8rem;
-                    margin-left: 0.5rem;
+            .experience-position-wrapper {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.9rem;
+
+                .experience-position-suitcase-svg-wrapper {
+                    display: flex;
+                    align-items: center;
+                    padding-right: 0.5rem;
+                    @media only screen and (min-width: 500px) {
+                        padding-left: 0.3rem;
+                    }
+
+                    .experience-position-suitcase-svg {
+                        margin: 0;
+                        @include themify($themes) {
+                            fill: themed('board-text-color');
+                        }
+                        width: 1.5rem;
+                        height: 1.5rem;
+
+                        &:hover {
+                            cursor: text;
+                        }
+                    }
                 }
-            }
 
-            .experience-position,
-            .experience-time {
-                display: block;
-                font-size: 0.9rem;
-                font-style: italic;
-            }
+                .experience-position-text {
+                    border-left: solid;
+                    border-width: 1px;
+                    border-color: red;
+                    padding-left: 0.5rem;
+                    @include themify($themes) {
+                        color: themed('board-text-color');
+                        border-color: themed('board-text-color');
+                    }
 
-            .margin-top-block {
-                display: block;
-                width: 100%;
-                height: 1rem;
+                    span {
+                        display: block;
+                        font-size: 0.85rem;
+                        font-style: italic;
+                    }
+                }
             }
         }
 
@@ -273,8 +299,6 @@
 
 @media only screen and (max-width: 500px) {
     .board {
-        overflow: visible;
-
         .board-content {
             padding: 3rem 10vw;
 
