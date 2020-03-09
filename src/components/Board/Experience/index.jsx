@@ -68,15 +68,6 @@ const Experience = () => {
             <WaveLine />
             <h1 className="experience-type">OTHER PROJECTS</h1>
             <h1 className="experience-title">
-                <span>React Native</span>
-                <ReactJs color="#61DAFB" />
-            </h1>
-            <p>
-                Independently developed an RSS feed reader app using React
-                Native: <a>BAO</a>.
-            </p>
-            <div className="margin-top-block" />
-            <h1 className="experience-title">
                 <span>Gatsby</span>
                 <Gatsby color="#663399" />
             </h1>
@@ -91,6 +82,15 @@ const Experience = () => {
                 </a>{' '}
                 built with Gatsby and hosted on Heroku~
             </p>
+            <h1 className="experience-title">
+                <span>React Native</span>
+                <ReactJs color="#61DAFB" />
+            </h1>
+            <p>
+                <a>BAO</a>: an RSS feed reader app build with React Native and
+                Redux.
+            </p>
+            <div className="margin-top-block" />
             <Contact />
         </section>
     )
