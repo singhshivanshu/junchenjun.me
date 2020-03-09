@@ -16,7 +16,7 @@ const Experience = () => {
             <span className="experience-time">July 2018 ~ August 2019</span>
 
             <p>
-                One year full-time working at the front-end team, worked closely
+                One year full-time working in the front-end team, worked closely
                 with React ecosystem, using TypeScript as the main programming
                 language. Three projects I have been highly involved in:
             </p>
