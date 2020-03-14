@@ -39,6 +39,6 @@ $dark-contact-link-highlight-color: $dark-highlight-menu-color;
 $dark-footer-text-color: darken($dark-menu-color, 15%);
 
 // theme button
-$dark-theme-button-heart-color: transparant;
+$dark-theme-button-heart-color: lighten($dark-board-bg-color, 18%);
 $dark-theme-button-heart-color-hightlight: $dark-highlight-menu-color;
 $dark-theme-button-border-color: lighten($dark-board-bg-color, 18%);
