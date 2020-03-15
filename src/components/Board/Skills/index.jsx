@@ -55,9 +55,9 @@ const Skills = () => {
                 <Gatsby color="#663399" />
             </ToolTip>
             <p>
-                More than one year of working experience in React, Redux and
-                many other more frontend frameworks. Worked closely with the
-                React ecosystem.
+                Working experience in React and Redux. Proficient in JavaScript,
+                HTML, CSS. Have a great eye for user interface. Familair with
+                modern frontend testing tools such as Jest, Cypress.
             </p>
             <WaveLine />
             <h1>Mobile development</h1>
@@ -74,9 +74,9 @@ const Skills = () => {
                 <Android color="#3DDC84" />
             </ToolTip>
             <p>
-                More than one year of working experience in React Native on the
-                Expo platform. Participated in a mobile project in all stages of
-                its life cycle, both iOS and Android.
+                Working experience in React Native on the Expo platform.
+                Participated in a mobile project in all stages of its life
+                cycle, both on iOS and Android.
             </p>
             <WaveLine />
             <h1>What else I love</h1>
