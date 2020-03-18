@@ -94,8 +94,14 @@ const Experience = () => {
                 <ReactJs color="#61DAFB" />
             </h1>
             <p>
-                <a>BAO</a>: an RSS feed reader app build with React Native and
-                Redux.
+                <a
+                    href="https://github.com/junchenjun/BAO"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    BAO
+                </a>
+                : an RSS feed reader app build with React Native and Redux.
             </p>
             <Contact />
         </section>
