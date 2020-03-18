@@ -25,10 +25,9 @@
 
         padding: 3rem 3rem;
         padding-left: 4rem;
-        line-height: 1.58;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            Roboto, Ubuntu, 'Helvetica Neue', sans-serif;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 1.62;
+        font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode',
+            'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         transition: transform 0.3s ease-in-out;
         z-index: 9;
         font-weight: 400;
@@ -47,7 +46,6 @@
             font-size: 1.5rem;
             margin: 1rem 0;
             margin-bottom: 0.9rem;
-            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         p {
@@ -125,6 +123,7 @@
                 margin: 0;
                 padding: 0;
                 text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
             }
             .about-title-1 {
                 font-size: 3.8rem;
@@ -201,23 +200,20 @@
             .experience-position-wrapper {
                 display: flex;
                 align-items: center;
-                margin-bottom: 0.9rem;
+                margin-bottom: 0.8rem;
 
                 .experience-position-suitcase-svg-wrapper {
                     display: flex;
                     align-items: center;
-                    padding-right: 0.5rem;
-                    @media only screen and (min-width: 500px) {
-                        padding-left: 0.3rem;
-                    }
+                    padding-right: 0.3rem;
 
                     .experience-position-suitcase-svg {
                         margin: 0;
                         @include themify($themes) {
                             fill: themed('board-text-color');
                         }
-                        width: 1.5rem;
-                        height: 1.5rem;
+                        width: 2.3rem;
+                        height: 2.3rem;
 
                         &:hover {
                             cursor: text;
@@ -226,15 +222,6 @@
                 }
 
                 .experience-position-text {
-                    border-left: solid;
-                    border-width: 1px;
-                    border-color: red;
-                    padding-left: 0.5rem;
-                    @include themify($themes) {
-                        color: themed('board-text-color');
-                        border-color: themed('board-text-color');
-                    }
-
                     span {
                         display: block;
                         font-size: 0.85rem;

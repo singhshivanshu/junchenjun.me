@@ -10,7 +10,7 @@ const AppHelmet = () => {
                 href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap"
             />
             <link
-                href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+                href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
                 rel="stylesheet"
             />
             <meta
