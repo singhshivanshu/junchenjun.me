@@ -1,1 +1,4 @@
-# 👉👉 [junchenjun.me](https://junchenjun.me)
+ 
+<p align="center">
+  👉[junchenjun.me](https://junchenjun.me)👈
+</p>
